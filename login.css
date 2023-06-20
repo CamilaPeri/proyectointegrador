@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-image: url(assets/background/backgroundLogin.png);
+}
+.formLogin {
+  width: 600px;
+  height: 340px;
+  background-color: #f5f5f5;
+  margin: auto;
+  margin-top: 180px;
+  box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  padding: 20px 30px;
+  color: white;
+  border-top: 4px solid #e2c1f3;
+}
+
+.formLogin h5 {
+  margin: 0;
+  text-align: center;
+  height: 40px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid;
+  font-size: 20px;
+  color: #2b2b2b;
+}
+
+.casillero {
+  width: 100%;
+  border: 1px solid #2b2b2b;
+  margin-bottom: 15px;
+  padding: 11px 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.boton {
+  width: 60%;
+  height: 40px;
+  background: #f5f5f5;
+  color: #2b2b2b;
+  margin-bottom: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: #e2c1f3 solid;
+}
+
+.boton:hover {
+  background: #e2c1f3;
+}
+
+.divboton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formLogin p {
+  height: 40px;
+  text-align: center;
+  color: #2b2b2b;
+}
+
+.formLogin a {
+  color: #2b2b2b;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.formLogin a:hover {
+  text-decoration: underline;
+}
