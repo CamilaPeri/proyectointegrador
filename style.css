@@ -33,7 +33,7 @@ header {
   padding: 0 30px;
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 2;
   background-color: white;
 }
 
@@ -50,6 +50,11 @@ header {
   display: none;
 }
 
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .navbarList {
   display: flex;
   gap: 50px;
@@ -702,7 +707,6 @@ main {
 } */
 
 /* Media Queries */
-
 @media (max-width: 992px) {
   .infoHero {
     text-align: center;
@@ -728,7 +732,7 @@ main {
   }
 }
 
-@media (max-width: 576px) {
+/* @media (max-width: 576px) {
   .navbar ul {
     background-color: white;
     width: 100%;
@@ -754,5 +758,99 @@ main {
 
   .infoHero {
     max-width: 100%;
+  }
+} */
+
+@media (max-width: 576px) {
+  /* Estilos para pantallas con un máximo de 576px */
+
+  header {
+    padding: 0 15px; /* Reduce el padding del encabezado */
+  }
+
+  .navbar ul {
+    background-color: white;
+    width: 100%;
+    height: calc(100vh - 80px);
+    position: absolute;
+    top: 80px;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(200%);
+    transition: all 0.4s ease-out;
+  }
+
+  .navbar i {
+    display: block;
+  }
+
+  #toggle-menu:checked ~ .navbarList {
+    transform: translateX(0%);
+    transition: all 0.4s ease-in;
+  }
+
+  .infoHero h1 {
+    font-size: 30px; /* Reduce el tamaño del título */
+    min-width: unset; /* Quita el ancho mínimo del título */
+  }
+
+  .beneficios {
+    max-width: 90%; /* Reduce el ancho máximo del contenedor de beneficios */
+    grid-column-gap: 20px; /* Reduce el espacio entre columnas en el grid de beneficios */
+    grid-row-gap: 20px; /* Reduce el espacio entre filas en el grid de beneficios */
+  }
+
+  .beneficios div {
+    height: auto; /* Ajusta la altura de los elementos de beneficios según el contenido */
+  }
+
+  .beneficios h2 {
+    font-size: 18px; /* Reduce el tamaño del título de beneficios */
+  }
+
+  .wrapper {
+    width: 100%; /* Ajusta el ancho del contenedor de las tarjetas */
+    padding: 15px; /* Reduce el padding del contenedor de las tarjetas */
+  }
+
+  .divheader label {
+    font-size: 16px; /* Reduce el tamaño de las etiquetas de las pestañas */
+  }
+
+  .row .pricing-details span {
+    font-size: 50px; /* Reduce el tamaño del precio */
+  }
+
+  .pricing-details span::before,
+  .pricing-details span::after {
+    font-size: 16px; /* Reduce el tamaño del símbolo de moneda y "/noche" */
+  }
+
+  .features li {
+    font-size: 14px; /* Reduce el tamaño de las características */
+  }
+
+  .wrapper button {
+    font-size: 16px; /* Reduce el tamaño del botón */
+  }
+
+  .cards .row {
+    width: 100%; /* Ajusta el ancho de las filas de las tarjetas */
+  }
+
+  .containerForm,
+  .containerMaps {
+    width: 100%; /* Ajusta el ancho de los contenedores de contacto y mapa */
+  }
+
+  .form input,
+  .form textarea {
+    width: 100%; /* Ajusta el ancho de los campos de formulario */
+  }
+
+  .containerContacto iframe {
+    width: 100%; /* Ajusta el ancho del mapa en el contenedor de contacto */
   }
 }
