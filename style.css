@@ -33,16 +33,20 @@ header {
   padding: 0 30px;
   position: fixed;
   top: 0;
-  z-index: 2;
+  z-index: 1;
   background-color: white;
 }
 
 .logo {
-  height: 40%;
+  height: 100%;
 }
 
 .navbar i {
   font-size: 36px;
+  display: none;
+}
+
+#toggle-menu {
   display: none;
 }
 
@@ -142,12 +146,12 @@ main {
   padding-top: 30px;
   font-weight: 800;
 }
-.company__benefits {
+.beneficios {
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 50%;
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
   justify-items: center;
   align-items: center;
   margin: 50px 0 35px 0;
@@ -156,7 +160,12 @@ main {
   cursor: default;
   background: url(assets/background/backgroundSecundary.png);
 }
-.company__benefits div {
+
+.beneficiosConteiner {
+  /* background: var(--background); */
+  box-shadow: 10px 10px 15px rgba(0.5, 0, 0, 0.4);
+}
+.beneficios div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -164,25 +173,24 @@ main {
   text-align: center;
   text-align: center;
   padding: 20px 20px;
-  background: url(assets/backgroundSecundary.png);
   border-radius: 20px;
   height: 200px;
 }
-.company__benefits p {
+.beneficios p {
   text-align: center;
   line-height: 20px;
 }
-.company__benefits h2 {
+.beneficios h2 {
   font-size: 20px;
   align-items: center;
   margin: 5px;
 }
-.company__benefits i {
+.beneficios i {
   margin: 10px;
   font-size: 40px;
   color: var(--primary);
 }
-.company__benefits i:hover {
+.beneficios i:hover {
   scale: 150%;
   color: var(--secondary);
   transition: all 0.2s ease-in;
@@ -210,12 +218,13 @@ main {
   width: 400px;
   /* background: var(--primary); */
   /* background: url(assets/cards/bgKira.png); */
-  background-size: 100%;
-  background-position: 50%;
-  background-repeat: no-repeat;
+  /* background-size: 100%;
+  background-position: 50%; */
+  /* background-repeat: no-repeat; */
   padding: 30px;
   border-radius: 16px;
-  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+  box-shadow: 10px 10px 15px rgba(0.5, 0, 0, 0.4);
+  /* border: solid var(--primary); */
 }
 .divheader {
   display: flex;
@@ -691,3 +700,59 @@ main {
 .cards:hover .back {
   transform: perspective(600px) rotateY(360deg);
 } */
+
+/* Media Queries */
+
+@media (max-width: 992px) {
+  .infoHero {
+    text-align: center;
+    width: 90%;
+    align-items: center;
+  }
+  .infoHero h1 {
+    display: block;
+    width: 100%;
+  }
+
+  .infoHero p {
+    max-width: 80%;
+    font-size: 20px;
+  }
+
+  .imgHero {
+    display: none;
+  }
+
+  #about {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar ul {
+    background-color: white;
+    width: 100%;
+    height: calc(100vh - 80px);
+    position: absolute;
+    top: 80px;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(200%);
+    transition: all 0.4s ease-out;
+  }
+
+  .navbar i {
+    display: block;
+  }
+
+  #toggle-menu:checked ~ .navbarList {
+    transform: translateX(0%);
+    transition: all 0.4s ease-in;
+  }
+
+  .infoHero {
+    max-width: 100%;
+  }
+}

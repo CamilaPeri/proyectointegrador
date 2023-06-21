@@ -7,15 +7,24 @@
     <title>Beto Lovers</title>
     <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
-    <script
+    <!-- <script
       src="https://kit.fontawesome.com/258757f8b8.js"
       crossorigin="anonymous"
-    ></script>
+    ></script> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
       <img src="assets/logo.png" alt="logo" class="logo" />
       <nav class="navbar">
+        <label for="toggle-menu"><i class="fa-solid fa-bars"></i></label>
+        <input type="checkbox" id="toggle-menu" />
         <ul class="navbarList">
           <li><a href="./login.html" target="_blank">Ingresa</a></li>
           <li><a href="#hero">Inicio</a></li>
@@ -61,8 +70,8 @@
       </section>
       <section id="grid">
         <h3>¿Por qué Beto Lovers?</h3>
-        <div class="company__benefits">
-          <div class="benefits__conteiner">
+        <div class="beneficios">
+          <div class="beneficiosConteiner">
             <i class="fa-solid fa-truck"></i>
             <h2>TRASLADOS</h2>
             <p>
@@ -70,7 +79,7 @@
               domicilio en nuestras vans especialmente preparadas.
             </p>
           </div>
-          <div class="benefits__conteiner">
+          <div class="beneficiosConteiner">
             <i class="fa-solid fa-shield-dog"></i>
             <h2>SEGURIDAD</h2>
             <p>
@@ -78,7 +87,7 @@
               seguridad, personal permanente 24/7/365.
             </p>
           </div>
-          <div class="benefits__conteiner">
+          <div class="beneficiosConteiner">
             <i class="fa-solid fa-briefcase-medical"></i>
             <h2>ATENCIÓN VETERINARIA</h2>
             <p>
@@ -87,7 +96,7 @@
               veterinario de ser necesario.
             </p>
           </div>
-          <div class="benefits__conteiner">
+          <div class="beneficiosConteiner">
             <i class="fa-solid fa-baseball"></i>
             <h2>RECREACIÓN</h2>
             <p>
@@ -98,7 +107,7 @@
         </div>
       </section>
       <section id="cards">
-        <h3 class="title-text">Vení a conocernos</h3>
+        <h3 class="title-text">Nuestros servicios</h3>
         <div id="tarjetas">
           <div class="wrapper">
             <input type="radio" name="slider" id="tab-1" />
