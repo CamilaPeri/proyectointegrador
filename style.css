@@ -716,34 +716,9 @@ body {
   #about {
     font-size: 15px;
   }
-}
 
-@media (max-width: 576px) {
   header {
     padding: 0 15px;
-  }
-
-  .navbarList {
-    background-color: white;
-    width: 100%;
-    height: calc(100vh - 80px);
-    position: absolute;
-    top: 80px;
-    left: 0;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transform: translateX(200%);
-    transition: all 0.4s ease-out;
-  }
-
-  .navbar i {
-    display: block;
-  }
-
-  #toggle-menu:checked ~ .navbarList {
-    transform: translateX(0%);
-    transition: all 0.4s ease-in;
   }
 
   .infoHero h1 {
@@ -808,4 +783,96 @@ body {
   .containerContacto iframe {
     width: 100%;
   }
+}
+
+@media (max-width: 576px) {
+  /* header {
+    padding: 0 15px;
+  } */
+
+  .navbarList {
+    background-color: white;
+    width: 100%;
+    height: calc(100vh - 80px);
+    position: absolute;
+    top: 80px;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(200%);
+    transition: all 0.4s ease-out;
+  }
+
+  .navbar i {
+    display: block;
+  }
+
+  #toggle-menu:checked ~ .navbarList {
+    transform: translateX(0%);
+    transition: all 0.4s ease-in;
+  }
+
+  /* .infoHero h1 {
+    font-size: 30px;
+    min-width: unset;
+  }
+
+  .beneficios {
+    max-width: 90%;git 
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+
+  .beneficios div {
+    height: auto;
+  }
+
+  .beneficios h2 {
+    font-size: 18px;
+  }
+
+  .wrapper {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .divheader label {
+    font-size: 16px;
+  }
+
+  .row .pricing-details span {
+    font-size: 50px;
+  }
+
+  .pricing-details span::before,
+  .pricing-details span::after {
+    font-size: 16px;
+  }
+
+  .features li {
+    font-size: 14px;
+  }
+
+  .wrapper button {
+    font-size: 16px;
+  }
+
+  .cards .row {
+    width: 100%;
+  }
+
+  .containerForm,
+  .containerMaps {
+    width: 100%;
+  }
+
+  .form input,
+  .form textarea {
+    width: 100%;
+  }
+
+  .containerContacto iframe {
+    width: 100%;
+  } */
 }
