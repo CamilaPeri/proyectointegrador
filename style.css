@@ -221,15 +221,9 @@ main {
 
 .wrapper {
   width: 400px;
-  /* background: var(--primary); */
-  /* background: url(assets/cards/bgKira.png); */
-  /* background-size: 100%;
-  background-position: 50%; */
-  /* background-repeat: no-repeat; */
   padding: 30px;
   border-radius: 16px;
   box-shadow: 10px 10px 15px rgba(0.5, 0, 0, 0.4);
-  /* border: solid var(--primary); */
 }
 .divheader {
   display: flex;
@@ -252,7 +246,6 @@ main {
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
-  /* border: 1px solid var(--secondary); */
 }
 
 #tab-1:checked ~ .divheader .tab-1,
@@ -267,12 +260,9 @@ main {
 
 .divheader .slider {
   position: absolute;
-  /* left: 50%; */
   height: 85%;
-  /* width: 120px; */
   background: var(--secondary);
   border-radius: inherit;
-  /* transform: translateX(-50%); */
   transition: all 0.3s ease;
 }
 
@@ -696,18 +686,8 @@ main {
   }
 }
 
-/*CARDS*/
-
-/* .cards:hover .front {
-  transform: perspective(600px) rotateY(180deg);
-}
-
-.cards:hover .back {
-  transform: perspective(600px) rotateY(360deg);
-} */
-
 /* Media Queries */
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .infoHero {
     text-align: center;
     width: 90%;
@@ -732,40 +712,9 @@ main {
   }
 }
 
-/* @media (max-width: 576px) {
-  .navbar ul {
-    background-color: white;
-    width: 100%;
-    height: calc(100vh - 80px);
-    position: absolute;
-    top: 80px;
-    left: 0;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transform: translateX(200%);
-    transition: all 0.4s ease-out;
-  }
-
-  .navbar i {
-    display: block;
-  }
-
-  #toggle-menu:checked ~ .navbarList {
-    transform: translateX(0%);
-    transition: all 0.4s ease-in;
-  }
-
-  .infoHero {
-    max-width: 100%;
-  }
-} */
-
 @media (max-width: 576px) {
-  /* Estilos para pantallas con un máximo de 576px */
-
   header {
-    padding: 0 15px; /* Reduce el padding del encabezado */
+    padding: 0 15px;
   }
 
   .navbar ul {
@@ -792,65 +741,65 @@ main {
   }
 
   .infoHero h1 {
-    font-size: 30px; /* Reduce el tamaño del título */
-    min-width: unset; /* Quita el ancho mínimo del título */
+    font-size: 30px;
+    min-width: unset;
   }
 
   .beneficios {
-    max-width: 90%; /* Reduce el ancho máximo del contenedor de beneficios */
-    grid-column-gap: 20px; /* Reduce el espacio entre columnas en el grid de beneficios */
-    grid-row-gap: 20px; /* Reduce el espacio entre filas en el grid de beneficios */
+    max-width: 90%;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
   }
 
   .beneficios div {
-    height: auto; /* Ajusta la altura de los elementos de beneficios según el contenido */
+    height: auto;
   }
 
   .beneficios h2 {
-    font-size: 18px; /* Reduce el tamaño del título de beneficios */
+    font-size: 18px;
   }
 
   .wrapper {
-    width: 100%; /* Ajusta el ancho del contenedor de las tarjetas */
-    padding: 15px; /* Reduce el padding del contenedor de las tarjetas */
+    width: 100%;
+    padding: 15px;
   }
 
   .divheader label {
-    font-size: 16px; /* Reduce el tamaño de las etiquetas de las pestañas */
+    font-size: 16px;
   }
 
   .row .pricing-details span {
-    font-size: 50px; /* Reduce el tamaño del precio */
+    font-size: 50px;
   }
 
   .pricing-details span::before,
   .pricing-details span::after {
-    font-size: 16px; /* Reduce el tamaño del símbolo de moneda y "/noche" */
+    font-size: 16px;
   }
 
   .features li {
-    font-size: 14px; /* Reduce el tamaño de las características */
+    font-size: 14px;
   }
 
   .wrapper button {
-    font-size: 16px; /* Reduce el tamaño del botón */
+    font-size: 16px;
   }
 
   .cards .row {
-    width: 100%; /* Ajusta el ancho de las filas de las tarjetas */
+    width: 100%;
   }
 
   .containerForm,
   .containerMaps {
-    width: 100%; /* Ajusta el ancho de los contenedores de contacto y mapa */
+    width: 100%;
   }
 
   .form input,
   .form textarea {
-    width: 100%; /* Ajusta el ancho de los campos de formulario */
+    width: 100%;
   }
 
   .containerContacto iframe {
-    width: 100%; /* Ajusta el ancho del mapa en el contenedor de contacto */
+    width: 100%;
   }
 }
